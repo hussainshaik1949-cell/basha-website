@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Mouse Events </title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+</head>
+<body>
+<h3 id="text"> Mouse Event Text </h3>
+<button id="btn"> Click or Double Click Me </button>
+
+<script>
+$(document).ready(function(){
+$("#btn").click(function(){
+$("#text").text("button clicked");
+});
+
+$("#btn").dblclick(function(){
+$("#text").text("button double clicked");
+});
+
+$("#text").mouseenter(function(){
+$(this).text("mouse entered text");
+});
+
+$("#text").mouseleave(function(){
+$(this).text("mouse left text");
+});
+
+});
+</script>
+</body>
+</html>
+
+
